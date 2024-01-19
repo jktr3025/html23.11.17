@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.tr1 {
+    background: yellowgreen;
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    /* transform: scale(2,4); */
+    /* 센터 중심으로 넓이는 2배 높이는 4배로 크게
+    도형뿐만 아니라 그 안에 들어있는 글자나 그림도 
+    함께 커진다 */
+
+    /* transform: scale(2);
+    센터를 중심으로 넓이 높이를 2배로 크게
+    내용이 위나 옆으로 넘치면 일부 내용 안 보일 수 있음 */
+    /*transform: scale(2,4);
+    -webkit-transform: scale(2,4); 
+    크롬 낮은 버전 사용하는 사람들에게도 
+    보일 수 있도록하는 명령어
+    그냥 트렌스폼과 각 브라우저 명령어를 써 주면 됨
+    오페라 -o- / 엣지 -ms- 파이어폭스 -moz- 등
+    w3school에서 보면 알 수 있음 */
+
+    /*transform: scaleX(2);
+    transform: scaleY(4);
+    x나 Y만 쓸 수 있는데 따로 쓰면
+    마지막 명령어인 스케일와이만 적용된다 
+        transform:scaleX(4) scaleY(4) ;  또는 
+        transform: scale(2,4);이렇게 써야 같이 적용됨*/
+    transform: scaleX(2) scaleY(3);
+    margin: 200px;
+}
+
+.tr2 {
+    width: 300px;
+    height: 150px;
+    background: coral;
+    border: 1px solid teal;
+    padding: 20px;
+    transform: rotate(15deg);
+    /* 센터를 중심으로 회전
+        회전 각도 + 각도를 뜻하는 deg(ree)
+        시계 방향이 양수, 시계 반대 방향은 음수
+        스케일과 마찬가지로 로테이트랑
+        각 브라우저 낮은 버전의 로테이트도 각각 적어줘야함*/
+    margin: 200px;
+}
+
+.tr3 {
+    width: 300px;height: 150px;
+    background: darkolivegreen;
+    border: 1px solid orangered;
+    padding: 20px;
+    margin: 200px;
+    transform: skew(20deg, 30deg);
+    /* 센터를 중심으로 기울임 정도 */
+}
+.tr4 {
+    width: 300px;height: 150px;
+    background:orchid;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 200px;
+    /* transform: rotateX(180deg) */
+    transform: rotateY(180deg)
+    /* 
+    transform: rotateX(180deg)
+    위 아래를 뒤집어 줌 (스케치북 넘기듯)
+    90도로 값을주면 평면으로 보여서 화면에는 안 나타남
+    transform: rotateY(180deg)
+    좌우를 뒤집어 줌 책을 넘기듯  */
+}
+.tr5 {
+    width: 300px;height: 150px;
+    background:olive;
+    border: 1px solid skyblue;
+    padding: 20px;
+    margin: 200px;
+    transform: skew(30deg) rotateX(180deg) scale(1.5);
+}
+.tr6 {
+    width: 300px;height: 150px;
+    background: orange;
+    border: 1px solid darkorchid;
+    padding: 20px;
+/* transform: translate(100%, 100%); */
+transform: translate(500px, 200px);
+    /* 
+    센터 중심으로 x축 y축을 지정한 위치만큼 옮김 
+    %일 떄는 내 크기 기준으로 %만큼 이동
+    +면 모니터 안쪽-는 모니터 바같쪽
+    */
+}
+.tr7 {
+    width: 300px;height: 150px;
+    background: gray;
+    border: 1px solid purple;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50% ;
+
+    /* margin-top: -75px;
+    margin-left: -150px; */
+    transform: translate(-50% , -50%);
+    
+    /* 
+    포지션 픽스로 50%를 주면 각 선을 중심으로 이동함으로 정중앙은 아님
+    정중앙으로 옮기기 위해서는 
+    마진을 주거나 트랜스폼-트랜슬레이트로 이동
+    */
+}

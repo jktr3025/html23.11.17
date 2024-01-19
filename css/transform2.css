@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.box1{
+    background: aqua;
+    width: 500px;
+    height: 50px;
+line-height: 50px;
+    text-align: center;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+    left: -200px;
+}
+
+.box2{
+    background: lightblue;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: skew(45deg);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.box3{
+    background: greenyellow;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50px;
+    position: absolute;
+top: 400px;
+left: 60px;
+text-align: center;
+transition: all 1s;
+cursor: pointer;
+/* 호버 했을 때 360도 돌아가는 과정이 화면에도 보이고 싶으면
+호버가 아닌 호버의 원본에 트렌지션 all + 초  */
+}
+.box3:hover{
+    background: yellow;
+    color: darkblue;
+    transform: scale(1.5) rotate(360deg);
+}
+.box4{
+    background: darkred;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 50px 100px;
+
+}

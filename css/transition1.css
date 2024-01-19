@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* .box{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background: salmon;
+    text-align: center;
+    margin: 200px;
+    transform-origin: left bottom ;
+   /* 센터포인트 변경하는 명령어 */
+   /* transition: width 1s, background-color 0.5s, transform 2s; */
+   /* transition: all 1s; */
+   /* 호버 때 변하는 과정이 화면에도 보이도록하는 명령어 
+   각각 항목을 따로 지정해줘도 되고
+    전체를 all로 묶어서 지정해줘도 됨}*/
+
+
+/* .box:hover{
+    width: 500px;
+    background: yellowgreen;
+    transform: rotate(45deg);
+} */ 
+.menu{
+    margin: 20px 0 0 20px;
+}
+
+.menu li{
+    background-color: skyblue;
+width: 200px;
+height: 50px;
+border-radius: 0 20px 20px 0;
+margin-top: 5px;
+}
+.menu li a{
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    display: block;
+    transition: all 1s;
+}
+.menu li a:hover{
+    border-radius: 0 20px 20px 0;
+width: 400px;
+height: 50px;
+background: darkblue;
+color: white;
+}
+
+.menu_1{
+    margin: 15px;
+}
+.menu_1 li{
+    margin-bottom: 10px;
+}
+.menu_1 li a{
+    display: block;
+    background: hotpink;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius:0 20px 20px 0; ;
+    text-align: center;
+    color: white;
+    transition: all 0.5s;
+}
+.menu_1 li a:hover{
+    background: yellow;
+    color: crimson;
+    width: 400px;
+    height: 50px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 1s;
+
+}
+.box1{
+    background: tomato;
+}
+.box2{
+    background: slateblue;
+    
+}
+
+.box:hover{
+width: 300px;
+height: 300px;
+line-height: 300px;
+font-size: 30px;
+}
+
+.box1:hover{
+ background: darkmagenta;
+ color: aliceblue;
+}
+
+.box2:hover{
+  background: pink;
+  color: darkblue;
+}
